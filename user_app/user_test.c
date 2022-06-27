@@ -121,7 +121,7 @@ void addStudent(){
 
 void writeToFile() {
   FILE* fp;
-  fp = fopen("students.txt", "w+");
+  fp = fopen("students.txt", "a");
 
   int i;
   for (i = 0; i < count; i++)

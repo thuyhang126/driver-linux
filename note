@@ -1,0 +1,20 @@
+/* bien dịch mã nguồn, tạo file kernel module */
+make
+
+/* xem thông tin về module */
+modinfo <name>.ko
+
+
+/* lắp kernel module */
+sudo insmod <name>.ko
+
+/* tháo kernel module */
+sudo rmmod <name>.ko
+
+/* show */
+lsmod | grep <name>
+dmesg
+
+cd user_app
+make
+./user_app
